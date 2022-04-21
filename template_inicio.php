@@ -10,7 +10,9 @@
 <section id="descripcion-home" class="seccion-page">
   <div class="container">
     <div class="row">
-
+      <div class="col-md-12">
+        Este contenido es nuevo
+      </div>
     </div>
   </div>
 </section>
