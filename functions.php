@@ -98,4 +98,4 @@ function my_pagination_rewrite() {
 add_action('init', 'my_pagination_rewrite');
 
 /*INTERVENCIÓN DE SEND CF7*/
-require get_template_directory() . '/inc/custom-function.php';
+//require get_template_directory() . '/inc/custom-function.php';

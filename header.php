@@ -22,16 +22,15 @@ $v_ = ($dev) ? '?v=' . rand(100, 999) : '';
 
 <body <?php body_class(); ?>>
 
-	<header id="cabecera-site">
-		<div class="container">
-			<div id="menu-header" class="row">
-				<div id="identidad" class="col-md-12">
-					<h1>
-						<a href="<?php bloginfo('url');?>">
-							<img src="<?php the_field('logo','option'); ?>" alt="SPU Relaciones Educativas" title="SPU Relaciones Educativas" width="300">
-						</a>
-					</h1>
-				</div>	
+	<header id="cabecera-site" class="py-3">
+		<div class="container-fluid">
+			<div id="menu-header" class="row justify-content-between align-items-center col-md-12">
+				<div id="identidad" class="col-md-auto col-sm-auto">
+					<a href="<?php bloginfo('url');?>"><img src="<?php the_field('logo','option'); ?>" alt="CONECTOR" title="CONECTOR"></a>
+				</div>				
+				<div id="menu-principal" class="col-md-auto col-sm-auto">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				</div>
 			</div>
 		</div>
 	</header>
