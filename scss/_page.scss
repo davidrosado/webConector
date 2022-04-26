@@ -15,6 +15,9 @@ img {max-width: 100%;}
 .seccion-page {
     @include seccion-page
 }
+.container {
+    max-width: 1160px
+}
 
 /*YOAX  */
 #yoax-productos {
@@ -60,5 +63,205 @@ img {max-width: 100%;}
                 }
             }
         }
+    }
+}
+
+/*YOAX ACADEMY*/
+#banner-yoax-academy {
+    h2 {
+        strong {
+            color: $morado;
+        }
+    }
+    color: $azul;
+}
+.formulario-page {
+    .wpcf7-form {
+        background: url('../images/icn-correo.png') left top no-repeat transparent;
+        padding-left: 100px;
+        font-family: 'Dosis', sans-serif;
+        label {
+            font-weight: 600;
+            width: 100%;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], select {
+            border: 1px solid $principal;
+            border-radius: 0.3rem;
+            width: 100%;
+            padding: 5px 10px;
+        }
+        h4 {
+            color: $azul;
+            margin-bottom: 2rem;
+        }
+        .obligatorio {
+            color: $azul;
+            font-weight: 600;
+            margin-bottom: 2rem
+        }
+        input[type="submit"] {
+            @include button-cta;
+        }
+    }
+}
+
+/*CONTACTO*/
+#banner-contacto {
+    color: $oscuro;
+    .texto-banner {
+        h2 {
+            color: $morado;
+        }
+    }
+    .redes-sociales {
+        display: flex;
+        list-style: none;
+        margin-top: -15px;
+        padding-left: 0;
+        justify-content: baseline;
+        li {
+            margin-right: 15px;
+            font-size: 2.5rem;
+            line-height: 1;
+            a {
+                background: transparent;
+                color: $morado;
+                margin: 0;
+                padding: 0 10px 0 0;
+                width: auto;
+            }
+        }
+    }
+}
+.block-wsp {
+    background: $verde;
+    bottom: 5%;
+    color: $blanco;
+    border-radius: 3.5rem 0 0 3.5rem;
+    padding: 1.2rem 2.2rem;
+    position: fixed;
+    font-size: 3rem;
+    right: 0;
+    a {color: $blanco;}
+}
+
+/*BLOG*/
+#banner-blog {
+    h2 {color: $morado;}
+}
+#listado-blog {
+    .listado-items {
+        .item-listado {
+            color: $oscuro;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+            .left-item {
+                img {
+                    filter: grayscale(100%);
+                    &:hover {
+                        filter: grayscale(0%)
+                    }
+                }
+            }
+            .right-item {
+                .date-item {color: $morado}
+                .titulo-item {
+                    a {
+                        color: $azul;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                }    
+            }
+        }
+    }
+}
+.custom-pagination {
+    .page-numbers {
+        color: $oscuro;
+        font-weight: 500;
+        margin: 0 1.5rem;
+        text-decoration: none;
+        &.current {
+            color: $azul
+        }
+        &::hover {color: $azul}
+    }
+}
+
+.single {
+    background: url('../images/bg-single.jpg') 0 0/ 100% 800px no-repeat $blanco;
+    .banner-single {
+        align-items: center;
+        display: flex;
+        min-height: 250px;
+        padding: 0;
+        h2 {
+            color: $morado;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+    }
+    .top-detalle {
+        .titulo-single {
+            color: $azul;
+            font-size: 3rem;
+            font-weight: 300;
+            margin-top: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        img {
+            filter: grayscale(100%);
+        
+            &:hover {
+                filter: grayscale(0%)
+            }
+        }
+    }
+    .contenido-detalle {font-size: 1rem;}
+    .bottom-detalle {
+        border-top: 2px solid $morado;
+        display: flex;
+        color: #751e89;
+        font-size: 0.9rem;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding-top: 40px;
+        .boton-volver {
+            width: 120px;
+            a {color: $morado; font-weight: 600; text-decoration: none;}
+        }
+        .share-single {
+            display: flex;
+            width: calc(100% - 130px);
+            align-items: center;
+            justify-content: flex-end;
+            .redes-sociales {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
+                justify-content: baseline;
+            
+                li {
+                    margin-left: 15px;
+                    font-size: 1rem;
+                    line-height: 1;
+            
+                    a {
+                        background: transparent;
+                        color: $morado;
+                        margin: 0;
+                        padding: 0 10px 0 0;
+                        width: auto;
+                    }
+                }
+            }
+            p {margin-bottom: 0;}
+        }
+
     }
 }

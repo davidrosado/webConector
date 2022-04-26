@@ -11,33 +11,32 @@
 	}
 	?>
 
-<?php /*
-<section class="banner-pagina" style="background-color: #ffcc00">
+
+<section class="banner-page banner-single">
 	<div class="container">
 		<div class="row">
-			<div class="titulo-banner-pagina col-12 color-blanco">
-				<h1><?php echo $cat_name ?></h1>
+			<div class="item-slider">
+				<div class="textos-banner text-center col-12">
+					<h2>BLOG</h2>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
-*/?>
 
-<section id="contenido-pagina" class="seccion-page">
+<section class="contenido-pagina seccion-page pt-0">
 	<div class="container">
 		<div class="row justify-content-center item-blog">
 
 			<div class="col-md-8 imagen-post">
-
-				<div class="top-detalle mb-3">
-					<h2 class="titulo-seccion titulo-single my-3"><?php the_title(); ?></h2>
+				<div class="top-detalle text-center">			
+					<picture>
+						<source media="(max-width: 990px)" srcset="<?php the_post_thumbnail_url('medium'); ?>">
+						<source media="(min-width: 991px)" srcset="<?php the_post_thumbnail_url('full'); ?>">
+						<img src="<?php the_post_thumbnail_url('full'); ?>">
+					</picture>
+					<h1 class="titulo-seccion titulo-single"><?php the_title(); ?></h1>					
 				</div>
-
-		    <picture>
-		      <source media="(max-width: 990px)" srcset="<?php the_post_thumbnail_url('medium'); ?>">
-		      <source media="(min-width: 991px)" srcset="<?php the_post_thumbnail_url('full'); ?>">
-		      <img src="<?php the_post_thumbnail_url('full'); ?>">
-		    </picture>
 			</div>
 
 			<div class="col-md-8 detalle-post">
@@ -48,24 +47,17 @@
 					<?php endif; ?>  						
 				</div>
 
-				<div class="bottom-detalle my-5">
-					<p class="date-item"><?php echo get_the_date(); ?></p>	
-				</div>
-
-				<?php /*
-				<div class="bottom-detalle mt-5">			
-	        <hr>
-					<div class="share-single mt-5 text-center">
-						<p><strong>Compartir este artículo:</strong></p>
-						<ul class="share-redes mb-5">
-							<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri()?>/images/icono-facebook.png"></a></li>
-							<?php /*<li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink();?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri()?>/images/icono-linkedin.png"></a></li>
-							<li><a href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink();?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri()?>/images/icono-twitter.png"></a></li> 
+				<div class="bottom-detalle">	
+					<div class="boton-volver"><a href="<?php bloginfo('url'); ?>/blog">&lt; Volver</a></div>					
+					<div class="share-single">
+						<p><strong>Compartir artículo en:</strong></p>
+						<ul class="redes-sociales">
+							<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink();?>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink();?>" target="_blank"><i class="fab fa-twitter"></i></a></li> 
 						</ul>	
 					</div>
-
-				</div>	
-				*/?>
+				</div>
 				
 			</div>	
 		</div>

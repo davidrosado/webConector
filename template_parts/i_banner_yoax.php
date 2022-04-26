@@ -17,7 +17,7 @@
                     <?php if ($imagen): ?>
                         <img class="img-responsive img-lateral-banner" src="<?php echo $imagen ?>"/>
                     <?php endif ?>    
-                    </div>                 
+                </div>                 
             <?php endwhile; 
     endif; ?>   
 </section>

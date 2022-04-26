@@ -11,7 +11,7 @@
     text-decoration: none;
 }
 @mixin seccion-page {
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 @mixin titulo-seccion {
     font-size: 3rem;
@@ -39,6 +39,7 @@
 }
 @mixin button-cta {
     background: $fucsia;
+    border: none;
     border-radius: 0.5rem;
     color: $blanco;
     padding: 0.8rem 1rem;
@@ -46,6 +47,7 @@
     font-weight: 700;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     width: 270px;
 }
 @mixin arrow-slide {

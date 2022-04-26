@@ -93,7 +93,7 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
  * After adding a rewrite rule, go to Settings > Permalinks and click Save to flush the rules cache
  */
 function my_pagination_rewrite() {
-    add_rewrite_rule('blog/page/?([0-9]{1,})/?$', 'index.php?category_name=blog&paged=$matches[1]', 'top');
+    //add_rewrite_rule('blog/page/?([0-9]{1,})/?$', 'index.php?category_name=blog&paged=$matches[1]', 'top');
 }
 add_action('init', 'my_pagination_rewrite');
 

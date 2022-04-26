@@ -16,7 +16,8 @@
                       <div class="imagen-slider col-md-5">
                         <img class="img-responsive" src="<?php echo $imagen ?>"/>
                       </div>      
-                    <?php endif ?>                     
+                    <?php endif ?>       
+                    </div>             
                 <?php endwhile; 
         endif; ?>    
     </div>

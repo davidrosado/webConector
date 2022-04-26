@@ -66,3 +66,23 @@ $('a.go-to').click(function() {
     }
   }
 });   
+
+document.addEventListener('wpcf7submit',function(event){
+  var status=event.detail.status;
+  console.log(status);
+  var button=$('.wpcf7-submit[disabled]');
+  var old_value=button.attr('data-value');
+  button.prop('disabled',false);
+  button.val(old_value);
+},false);
+
+$('form.wpcf7-form').on('submit',function(){
+  var form=$(this);
+  var formid=form.attr('id');
+  var button=form.find('input[type=submit]');
+  var buttonid=button.attr('id');
+  var current_val=button.val();
+  $('input#'+buttonid).attr('data-value',current_val);
+  $('input#'+buttonid).prop("disabled",true);
+  $('input#'+buttonid).val("Enviando...");
+});
