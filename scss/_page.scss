@@ -1,3 +1,64 @@
 body {
-    background: $blanco;
+    background: url('../images/bg-banner.jpg') 0 0/ 100% 800px no-repeat $blanco;
+    color: $principal;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+h1, h2, h3, h4 {
+    font-family: 'Dosis', sans-serif;
+}
+img {max-width: 100%;}
+.text-justify {
+    text-align: justify;
+}
+.seccion-page {
+    @include seccion-page
+}
+
+/*YOAX  */
+#yoax-productos {
+    @include top-seccion;
+}
+.listado-items {
+    @include flexible;
+    align-items: baseline;
+    .item-listado {
+        figure {
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.5rem;
+            background: $celeste;
+            display: flex;
+            min-width: 100%;
+            min-height: 280px;
+            margin-bottom: 1.7rem;
+        }
+        h4 {
+            color: $azul;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.3rem
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+#yoax-soluciones {
+    @include top-seccion;
+    .listado-items {
+        .item-listado {
+            margin-bottom: 2rem;
+            .top-item-listado {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+                h4 {
+                    width: calc(100% - 100px);
+                }
+            }
+        }
+    }
 }

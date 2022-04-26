@@ -1,0 +1,17 @@
+#cabecera-site {
+    padding: 2rem 0;
+    #identidad {width: 250px;}
+    #menu-site {
+        min-width: 600px;
+        #menu-principal {
+            @include flexible;
+            list-style: none;
+            li {
+                margin: 0 .5rem;
+                a {
+                    @include reset-enlace;
+                }
+            }
+        }
+    }
+}

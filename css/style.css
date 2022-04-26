@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
 *::before,
 *::after {
@@ -6809,20 +6810,240 @@ progress {
     border-radius: 0;
   }
 }
-#banner-home {
-  background: url("../images/bg-banner.jpg") 0 0 no-repeat;
-  padding-top: 150px;
+#cabecera-site {
+  padding: 2rem 0;
+}
+#cabecera-site #identidad {
+  width: 250px;
+}
+#cabecera-site #menu-site {
+  min-width: 600px;
+}
+#cabecera-site #menu-site #menu-principal {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+#cabecera-site #menu-site #menu-principal li {
+  margin: 0 0.5rem;
+}
+#cabecera-site #menu-site #menu-principal li a {
+  color: #808080;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.banner-page {
+  padding-top: 2rem;
+}
+.banner-page .item-slider {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   position: relative;
 }
-@media (max-width: 991px) {
-  #banner-home {
-    padding-top: 180px;
-    background: none;
-  }
+.banner-page .item-slider .texto-banner h2, .banner-page .item-slider .texto-banner .h2 {
+  color: #ff0000;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+.banner-page .item-slider .texto-banner h3, .banner-page .item-slider .texto-banner .h3 {
+  color: #751e89;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.banner-page .item-slider .texto-banner a {
+  background: #dc0b44;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  width: 270px;
+  margin: 50px auto;
+  display: inline-block;
+}
+.banner-page .item-slider .img-lateral-banner {
+  position: absolute;
+  right: 0;
+  top: 80px;
 }
 
 body {
-  background: #fff;
+  background: url("../images/bg-banner.jpg") 0 0/100% 800px no-repeat #fff;
+  color: #808080;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: "Dosis", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.seccion-page {
+  padding: 3rem 0;
+}
+
+/*YOAX  */
+#yoax-productos .top-seccion {
+  margin-bottom: 4rem;
+}
+#yoax-productos .top-seccion h3, #yoax-productos .top-seccion .h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #046aac;
+}
+#yoax-productos .top-seccion p {
+  font-size: 1.5rem;
+}
+#yoax-productos .top-seccion img {
+  margin-top: 3rem;
+}
+
+.listado-items {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.listado-items .item-listado figure {
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  background: #e6f1f7;
+  display: flex;
+  min-width: 100%;
+  min-height: 280px;
+  margin-bottom: 1.7rem;
+}
+.listado-items .item-listado h4, .listado-items .item-listado .h4 {
+  color: #046aac;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+.listado-items .item-listado p {
+  font-size: 1rem;
+}
+
+#yoax-soluciones .top-seccion {
+  margin-bottom: 4rem;
+}
+#yoax-soluciones .top-seccion h3, #yoax-soluciones .top-seccion .h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #046aac;
+}
+#yoax-soluciones .top-seccion p {
+  font-size: 1.5rem;
+}
+#yoax-soluciones .top-seccion img {
+  margin-top: 3rem;
+}
+#yoax-soluciones .listado-items .item-listado {
+  margin-bottom: 2rem;
+}
+#yoax-soluciones .listado-items .item-listado .top-item-listado {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+#yoax-soluciones .listado-items .item-listado .top-item-listado h4, #yoax-soluciones .listado-items .item-listado .top-item-listado .h4 {
+  width: calc(100% - 100px);
+}
+
+/*PRIMER BLOQUE HOME*/
+#descripcion-home .row {
+  justify-content: space-between;
+}
+
+/*TERCER BLOQUE HOME*/
+#descripcion-bottom-home h3, #descripcion-bottom-home .h3 {
+  color: #046aac;
+}
+#descripcion-bottom-home h3.espacio-alto, #descripcion-bottom-home .espacio-alto.h3 {
+  margin-top: 4rem;
+}
+
+/*BLOQUE DESCUBRE*/
+.slogan h2, .slogan .h2 {
+  color: #751e89;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.slogan h2 strong, .slogan .h2 strong {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.slogan a {
+  background: #dc0b44;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  width: 270px;
+  display: block;
+  margin: 0 auto;
+}
+
+#colaboramos h3, #colaboramos .h3 {
+  color: #046aac;
+  margin-bottom: 2rem;
+}
+#colaboramos .slider-colaboramos .item-slider {
+  align-items: center;
+  display: flex;
+  min-height: 170px;
+}
+#colaboramos .slider-colaboramos .item-slider img {
+  display: inline-block;
+  margin: 0 auto;
+}
+#colaboramos .slider-colaboramos .slick-prev {
+  height: 50px;
+  width: 30px;
+}
+#colaboramos .slider-colaboramos .slick-prev::before {
+  display: block;
+  height: 50px;
+  width: 30px;
+}
+#colaboramos .slider-colaboramos .slick-prev::before {
+  content: url("../images/left-arrow.png");
+}
+#colaboramos .slider-colaboramos .slick-next {
+  height: 50px;
+  width: 30px;
+}
+#colaboramos .slider-colaboramos .slick-next::before {
+  display: block;
+  height: 50px;
+  width: 30px;
+}
+#colaboramos .slider-colaboramos .slick-next::before {
+  content: url("../images/right-arrow.png");
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,32 @@
-#banner-home {
-    background: url('../images/bg-banner.jpg') 0 0 no-repeat;
-    padding-top: 150px;
-    position: relative;
-    @media (max-width: 991px) {
-        padding-top: 180px;
-        background: none;
-    }    
+.banner-page {
+    padding-top: 2rem;
+    .item-slider {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .texto-banner {
+            h2 {
+                color: $rojo;
+                font-size: 3rem;
+                font-weight: 800;
+                margin-bottom: 1.5rem;
+            }
+            h3 {
+                color: $morado;
+                font-size: 2.2rem;
+                font-weight: 700;
+            }
+            a {
+                @include button-cta;
+                margin: 50px auto;
+                display: inline-block;
+            }
+        }
+        .img-lateral-banner {
+            position: absolute;
+            right: 0;
+            top: 80px;
+        }
+    }
 }

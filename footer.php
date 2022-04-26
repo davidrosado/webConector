@@ -6,11 +6,6 @@
 				</div>
 			</div>
 		</div>
-
-	  	<div id="elipse-footer" class="wow fadeInDown" data-wow-duration="4s">
-	    	<img src="<?php echo get_stylesheet_directory_uri()?>/images/elipses-footer.png" width="180">
-	  	</div>
-
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -26,24 +21,5 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
 	<script src="<?php echo get_stylesheet_directory_uri()?>/js/custom.js"></script>
 <?php wp_footer(); ?>
-
-  <script>
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        callback:     function(box) {
-          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-      }
-    );
-    wow.init();
-    /*document.getElementById('moar').onclick = function() {
-      var section = document.createElement('section');
-      section.className = 'section--purple wow fadeInDown';
-      this.parentNode.insertBefore(section, this);
-    };*/
-  </script>
-
 </body>
 </html>
