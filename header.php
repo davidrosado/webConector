@@ -25,10 +25,10 @@ $v_ = ($dev) ? '?v=' . rand(100, 999) : '';
 	<header id="cabecera-site">
 		<div class="container">
 			<div class="row justify-content-between align-items-center col-md-12">
-				<div id="identidad" class="col-md-auto col-sm-auto">
+				<div id="identidad" class="col-md-auto col-sm-auto wow fadeInDown" data-wow-duration="3s">
 					<a href="<?php bloginfo('url');?>"><img src="<?php the_field('logo','option'); ?>" alt="CONECTOR" title="CONECTOR"></a>
 				</div>				
-				<div id="menu-site" class="col-md-auto col-sm-auto">
+				<div id="menu-site" class="col-md-auto col-sm-auto wow fadeInDown" data-wow-duration="3s">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</div>
 			</div>

@@ -1,9 +1,18 @@
-	<footer id="pie-pagina" class="seccion-page">
+	<footer id="pie-pagina" class="seccion-footer">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<?php the_field('textos_footer','option') ?>
+			<div class="row justify-content-between">
+				<div class="col-5">
+					<?php the_field('widget_1_footer','option') ?>
 				</div>
+				<div class="col text-center">
+					<?php the_field('widget_2_footer','option') ?>
+				</div>
+				<div class="col text-center">
+					<?php the_field('widget_3_footer','option') ?>
+				</div>
+				<div class="col-3 col-siguenos">
+					<?php the_field('widget_4_footer','option') ?>
+				</div>												
 			</div>
 		</div>
 	</footer>

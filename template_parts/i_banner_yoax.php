@@ -7,7 +7,7 @@
                         <div class="row">
                             <?php $texto = get_sub_field('textos_banner'); $imagen = get_sub_field('imagen_banner'); ?>
                             <?php if ($texto): ?>
-                                <div class="texto-banner col-md-5">
+                                <div class="texto-banner col-md-5 wow fadeInLeft" data-wow-duration="3s">
                                     <?php echo $texto ?>
                                 </div>                        
                             <?php endif ?>
@@ -15,7 +15,7 @@
                     </div>
                     
                     <?php if ($imagen): ?>
-                        <img class="img-responsive img-lateral-banner" src="<?php echo $imagen ?>"/>
+                        <img class="img-responsive img-lateral-banner wow fadeInright" data-wow-duration="3s" src="<?php echo $imagen ?>"/>
                     <?php endif ?>    
                 </div>                 
             <?php endwhile; 

@@ -86,3 +86,11 @@ $('form.wpcf7-form').on('submit',function(){
   $('input#'+buttonid).prop("disabled",true);
   $('input#'+buttonid).val("Enviando...");
 });
+
+wow = new WOW(
+  {
+    animateClass: 'animated',
+    offset:       100
+  }
+);
+wow.init();

@@ -2,7 +2,7 @@ body {
     background: url('../images/bg-banner.jpg') 0 0/ 100% 800px no-repeat $blanco;
     color: $principal;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     line-height: 1.5;
 }
 h1, h2, h3, h4 {
@@ -16,12 +16,15 @@ img {max-width: 100%;}
     @include seccion-page
 }
 .container {
-    max-width: 1160px
+    max-width: 1180px
 }
 
 /*YOAX  */
 #yoax-productos {
     @include top-seccion;
+    .item-listado {
+        padding: 0 15px;
+    }
 }
 .listado-items {
     @include flexible;
@@ -49,17 +52,24 @@ img {max-width: 100%;}
     }
 }
 
+#conexiones {
+    background: url('../images/bg-conexiones.jpg') 0 0/100% auto no-repeat $blanco;
+    min-height: 900px;
+}
+
 #yoax-soluciones {
     @include top-seccion;
     .listado-items {
         .item-listado {
             margin-bottom: 2rem;
             .top-item-listado {
+                align-items: flex-end;
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 2rem;
                 h4 {
                     width: calc(100% - 100px);
+                    margin-bottom: 0;
                 }
             }
         }

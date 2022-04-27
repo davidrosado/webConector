@@ -21,7 +21,7 @@
 </section>
 
 <div class="block-wsp">
-    <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/51927126983"><i class="fab fa-whatsapp"></i></a>
 </div>
 
 <?php get_footer(); ?>

@@ -1,4 +1,5 @@
 .banner-page {
+    color: $secundario;
     min-height: 700px;
     padding-top: 2rem;
     .item-slider {
@@ -7,10 +8,11 @@
         justify-content: space-between;
         position: relative;
         .texto-banner {
+            max-width: 480px;
             h2 {
                 color: $rojo;
-                font-size: 3rem;
-                font-weight: 800;
+                font-size: 3.2rem;
+                font-weight: 700;
                 margin-bottom: 1.5rem;
             }
             h3 {
@@ -27,7 +29,25 @@
         .img-lateral-banner {
             position: absolute;
             right: 0;
-            top: 80px;
+            top: 0;
         }
+    }
+}
+
+#banner-home {
+    .item-slider {
+        .texto-banner {
+            h3 {
+                font-size: 3.2rem;
+                margin-bottom: 0;
+            }
+            a {margin-left: -4rem;}
+        }
+    }
+}
+#banner-yoax {
+    .item-slider .texto-banner {
+        padding-top: 2rem;
+        p {margin-bottom: 0;}
     }
 }

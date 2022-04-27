@@ -1,0 +1,28 @@
+#pie-pagina {
+    background: $azul;
+    color: $blanco;
+    font-size: .85em;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    .col-siguenos {
+        align-items: baseline;
+        display: flex;
+        justify-content: flex-end;
+    }
+    p {
+        margin-bottom: 0;
+        a {color: $blanco}
+    }
+    .redes-sociales {
+        @include flexible;
+        list-style: none;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        padding: 0;
+        a {
+            color: $blanco;
+            font-size: 1.2rem;
+            margin-left: 1rem;
+        }
+    }
+}

@@ -7,11 +7,32 @@
 
 /*TERCER BLOQUE HOME*/
 #descripcion-bottom-home {
+    //background: url('../images/creemos-bg.png') 0 0  no-repeat $blanco;
+    position: relative;
     h3 {
         color: $azul;
         &.espacio-alto {
             margin-top: 4rem
         }
+    }
+    .texto-del-bloque {
+        padding: 3rem 15px;
+        position: relative;
+    }
+    .fig {
+        position: absolute;   
+    }
+    .fig1 {
+        right: 0;
+        top: -150px
+    }
+    .fig2 {
+        right: 0;
+        top: 0
+    }
+    .fig3 {
+        right: 0;
+        bottom: 0
     }
 }
 
@@ -20,11 +41,11 @@
     h2 {
         color: $morado;
         font-size: 2.8rem;
-        font-weight: 400;
-        margin-bottom: 2rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
         strong {
-            font-weight: 600;
-            font-size: 1.2em;
+            font-weight: 500;
+            font-size: 1.4em;
         }
     }
     a {
@@ -53,6 +74,7 @@
             @include arrow-slide;
             &::before {
                 content: url('../images/left-arrow.png');
+                opacity: 1
             }
         }
 
@@ -60,6 +82,7 @@
             @include arrow-slide;
             &::before {
                 content: url('../images/right-arrow.png');
+                opacity: 1
             }
         }
     }
