@@ -28,6 +28,7 @@ $v_ = ($dev) ? '?v=' . rand(100, 999) : '';
 				<div id="identidad" class="col-md-auto col-sm-auto wow fadeInDown" data-wow-duration="3s">
 					<a href="<?php bloginfo('url');?>"><img src="<?php the_field('logo','option'); ?>" alt="CONECTOR" title="CONECTOR"></a>
 				</div>				
+				<button id="open-menu"><i class="fas fa-bars"></i></button>
 				<div id="menu-site" class="col-md-auto col-sm-auto wow fadeInDown" data-wow-duration="3s">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</div>

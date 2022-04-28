@@ -26,7 +26,7 @@
                         <img src="<?php the_sub_field('imagen')?>" alt="">
                     </figure>
                     <div class="bottom-item-listado">
-                        <h4><?php the_sub_field('titulo')?></h4>
+                        <?php /*<h4><?php the_sub_field('titulo')?></h4> */?>
                         <p><?php the_sub_field('bajada')?></p>
                     </div>
                 </div>

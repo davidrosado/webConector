@@ -2,6 +2,9 @@
     color: $secundario;
     min-height: 700px;
     padding-top: 2rem;
+    @media (max-width: 1200px) {
+        min-height: 1px;
+    }
     .item-slider {
         align-items: center;
         display: flex;
@@ -31,6 +34,15 @@
             right: 0;
             top: 0;
         }
+        @media (max-width: 767px) {
+            .imagen-slider, .img-lateral-banner {
+                display: none;
+            }
+            .texto-banner {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
     }
 }
 
@@ -41,7 +53,12 @@
                 font-size: 3.2rem;
                 margin-bottom: 0;
             }
-            a {margin-left: -4rem;}
+            a {
+                margin-left: -4rem;
+                @media (max-width: 767px) {
+                    margin-left: 0;
+                }
+            }
         }
     }
 }
@@ -49,5 +66,32 @@
     .item-slider .texto-banner {
         padding-top: 2rem;
         p {margin-bottom: 0;}
+    }
+}
+
+#banner-yoax-academy {
+    .item-slider .texto-banner {
+        max-width: none;
+        padding-left: 40px;
+        p {font-size: 1.2rem;}
+    }
+}
+#banner-contacto {
+    .item-slider .texto-banner {
+        p {
+            a {
+                color: $oscuro;
+                background: none;
+                font-family: "Nunito", sans-serif;
+                font-size: 1.3rem;
+                font-weight: 400;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                text-transform: none;
+                width: auto;
+                &:hover {color: $morado;}
+            }
+        }
     }
 }

@@ -64,7 +64,7 @@
  <?php endif; ?>  
 
 <?php if( have_rows('bloque_colaboramos') ):?>
-  <section id="colaboramos" class="seccion-page">
+  <section id="colaboramos" class="seccion-page colaboramos">
     <div class="container">  
       <?php while ( have_rows('bloque_colaboramos') ) : the_row(); ?>                
         <div class="row">
@@ -88,5 +88,35 @@
       </div>
     </section>      
  <?php endif; ?>  
+
+ <?php if( have_rows('bloque_colaboramos_2') ):?>
+  <section id="colaboramos-2" class="seccion-page colaboramos">
+    <div class="container">  
+      <?php while ( have_rows('bloque_colaboramos_2') ) : the_row(); ?>                
+        <div class="row">
+          <div class="titulo-seccion text-center wow fadeInDown" data-wow-duration="3s">
+            <h3><?php the_sub_field('titulo_bloque')?></h3>
+          </div>   
+        </div>
+
+        <?php if( have_rows('logos') ):?>
+          <div class="row">
+            <div class="col-12 tex-center slider-colaboramos">              
+              <?php while ( have_rows('logos') ) : the_row(); ?>                
+                <div class="item-slider">
+                  <img src="<?php the_sub_field('logo')?>" alt="">
+                </div>
+              <?php endwhile; ?>
+            </div>   
+          </div>               
+        <?php endif; ?>         
+      <?php endwhile; ?>
+      </div>
+    </section>      
+ <?php endif; ?>  
+
+ <div class="block-wsp">
+    <a href="https://wa.me/51991476568" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
 
 <?php get_footer(); ?>

@@ -43,6 +43,9 @@
         font-size: 2.8rem;
         font-weight: 500;
         margin-bottom: 3rem;
+        @media(max-width: 991px) {
+            font-size: 2rem;
+        }
         strong {
             font-weight: 500;
             font-size: 1.4em;
@@ -55,7 +58,7 @@
     }
 }
 
-#colaboramos {
+.colaboramos {
     h3 {
         color: $azul;
         margin-bottom: 2rem;
@@ -68,6 +71,10 @@
             img {
                 display: inline-block;
                 margin: 0 auto;
+                filter: grayscale(100%);
+                &:hover {
+                    filter: grayscale(0%)
+                }
             }
         }
         .slick-prev {
@@ -76,6 +83,9 @@
                 content: url('../images/left-arrow.png');
                 opacity: 1
             }
+            @media (max-width: 1280px) {
+                left: 15px
+            }
         }
 
         .slick-next {
@@ -83,6 +93,9 @@
             &::before {
                 content: url('../images/right-arrow.png');
                 opacity: 1
+            }
+            @media (max-width: 1280px) {
+                right: 15px
             }
         }
     }

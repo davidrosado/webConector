@@ -24,15 +24,15 @@
           <?php if ( $custom_query->have_posts() ) : ?>
             <!-- the loop -->
             <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
-                <div class="col-md-12 item-blog item-listado px-0">
-                    <div class="left-item col-md-6">
+                <div class="col-md-12 item-blog item-listado">
+                    <div class="left-item col-md-6 wow fadeInLeft" data-wow-duration="3s">
                       <?php if (has_post_thumbnail()) :?> 
                         <a href="<?php the_permalink(); ?>"><img lazyload src="<?php the_post_thumbnail_url('large') ?>"></a>
                       <?php endif ?>
                       
                     </div>
-                    <div class="right-item col-md-5">
-                      <p class="date-item mt-3"><?php echo get_the_date(); ?></p>
+                    <div class="right-item col-md-5 wow fadeInRight" data-wow-duration="3s">
+                      <p class="date-item"><?php echo get_the_date(); ?></p>
                       <h3 class="titulo-item"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
                       <p class="resumen-item"><?php the_excerpt();?></p>
                     </div>
@@ -54,6 +54,7 @@
           <?php endif; ?>         
         </div>
     </div>
+    <img src="<?php echo get_stylesheet_directory_uri()?>/images/bg-blog.png" class="fig fig1" alt="">   
 </section>
 
 

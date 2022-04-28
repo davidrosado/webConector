@@ -7,7 +7,7 @@
   include 'template_parts/i_banner_yoax-contacto.php'
 ?>
 
-<section class="formulario-page seccion-page">   
+<section class="formulario-page seccion-page wow fadeInDown" data-wow-duration="3s">   
     <div class="container">
         <div class="row">
             <div class="col-12 contenedor-form">
@@ -19,9 +19,5 @@
         </div>
     </div>
 </section>
-
-<div class="block-wsp">
-    <a href="https://wa.me/51927126983"><i class="fab fa-whatsapp"></i></a>
-</div>
 
 <?php get_footer(); ?>

@@ -53,8 +53,8 @@
 						<p><strong>Compartir artículo en:</strong></p>
 						<ul class="redes-sociales">
 							<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink();?>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 							<li><a href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink();?>" target="_blank"><i class="fab fa-twitter"></i></a></li> 
+							<li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink();?>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 						</ul>	
 					</div>
 				</div>

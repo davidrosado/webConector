@@ -39,14 +39,14 @@ $('.slider-colaboramos').slick({
       {
           breakpoint: 960,
           settings: {                           
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 3                   
           }
       },        
       {
           breakpoint: 767,
           settings: {                                         
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1                   
           }
       }            
@@ -87,10 +87,19 @@ $('form.wpcf7-form').on('submit',function(){
   $('input#'+buttonid).val("Enviando...");
 });
 
-wow = new WOW(
+/*wow = new WOW(
   {
     animateClass: 'animated',
     offset:       100
   }
 );
-wow.init();
+wow.init();*/
+
+
+$('#open-menu').click(function() {
+  $('#menu-site').toggleClass('showMenu')
+});   
+
+/*$('#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item').click(function() {
+  $(this).find('.mega-sub-menu').toggleClass('showMenu')
+}); */

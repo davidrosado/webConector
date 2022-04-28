@@ -1,16 +1,19 @@
 	<footer id="pie-pagina" class="seccion-footer">
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="col-5">
-					<?php the_field('widget_1_footer','option') ?>
-				</div>
-				<div class="col text-center">
+				<?php if (get_field('widget_1_footer','option')) :?>
+					<div class="col-md-auto widget-footer">
+						<?php the_field('widget_1_footer','option') ?>
+					</div>
+				<?php endif ?>
+
+				<div class="col text-center widget-footer">
 					<?php the_field('widget_2_footer','option') ?>
 				</div>
-				<div class="col text-center">
+				<div class="col text-center widget-footer">
 					<?php the_field('widget_3_footer','option') ?>
 				</div>
-				<div class="col-3 col-siguenos">
+				<div class="col-md-auto col-siguenos widget-footer">
 					<?php the_field('widget_4_footer','option') ?>
 				</div>												
 			</div>
